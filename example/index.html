@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>CharCycle Example</title>
+  <meta name="description" content="jQuery pluging for character cycling effect" />
+  <meta name="author" content="Robin Willis" />
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../src/jquery.charCycle.0.0.1.js"></script>
+  <link rel="stylesheet" href="css/charcycle.css" type="text/css">  
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+  	  	
+  	$('.c').mouseenter(function(){
+  		
+  		if($(this).hasClass('cycling')==false){
+			  		
+			  		$(this).charcycle({'target':'#text'});	
+		}
+  	});
+  });
+  	
+  </script>
+  
+  <style type="text/css">
+    body{
+      background-color:#FFFFFF;
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+
+
+   
+    	<h3>Using Divs</h3>
+    	<div class="c"><a href="#" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div> 
+    	<div class="c"><a href="#" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div>  
+    	<h3>Using a List</h3>
+    <ul>
+    	<li class="c"><a href="#" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+    	<li class="c"><a href="#" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>	
+    </ul>
+    
+    
+ 
+
+    <footer>
+     <p>by Robin Willis</p>
+    </footer>
+
+</body>
+</html>
+html>

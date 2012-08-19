@@ -1,6 +1,12 @@
-/**
- * @author Robin Willis
- */
+/************************************************************************
+*************************************************************************
+@Name :       CharCycle - jQuery Plugin
+@Revison :    0.0.1
+@Date :       01/25/2012
+@Author:      Robin Willis
+@License :    Open Source - MIT License : http://www.opensource.org/licenses/mit-license.php
+**************************************************************************
+*************************************************************************/
 (function($){
 
 $.fn.charcycle = function( options ){
