@@ -1,0 +1,13 @@
+{
+  "name": "CharCycle",
+  "version": "0.0.1",
+  "author": "Robin Willis",
+  "description": "jQuery plugin to cycle through characters on an event",
+  "homepage": "http://www.robincwillis.com/CharCycle/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robincwillis/CharCycle.git"
+  },
+  "dependencies": {
+  }
+}

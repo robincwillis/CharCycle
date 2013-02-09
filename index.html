@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CharCycle, an Effect JQuery Plugin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="src/jquery.charCycle.0.0.1.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/charcycle.css"></link>
+        
+    <script type="text/javascript">
+      $(document).ready(function(){     
+        $('.c').mouseenter(function(){
+          if($(this).hasClass('cycling')==false){ 
+              $(this).charcycle({'target':'#text'});  
+          }
+        });
+    });
+    </script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4803873-2']);
+      _gaq.push(['_setDomainName', '.robincwillis.com']);
+      _gaq.push(['_trackPageview','/CharCycle']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+
+  </head>
+      
+  <body>
+
+
+    <div id="container">
+
+    
+  
+    <h1>CharCycle</h1>
+    <h2>A JQuery plugin to create a cycling effect on selected text at some event.</h2>
+    <div id="content">
+       <div id="header">
+    <!-- Demo Header -->  
+    <div id="demo_cycle">
+     
+      <div class="c"><a href="#" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div> 
+      <div class="c"><a href="#" id="text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></div>  
+      <div class="c"><a href="#" id="text">Ut enim ad minim veniam</a></div> 
+      <div class="c"><a href="#" id="text">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</a></div>  
+    
+    </div>
+    
+  
+    
+    </div>
+    
+     
+    <!-- Description -->
+    <div id="description">
+    
+    <h3>Description</h3>
+
+
+    
+    <p>
+This effect is inspired by the classic actionscript effect on <a href="http://www.yugop.com">yugop.com</a>. Attach the plugin to the element you want to trigger the cycling, specify the target text you want to produce the effect and include a conditional statement to ensure that cycling isn’t re-triggered while the effect is in progress.
+    </p>  
+
+<h3>Options</h3>
+<ul>
+<li><b>speed</b>: time it takes per cycle, default is set to 5</li>
+
+</ul>
+    </div>
+    </div>
+    <div id="menu">
+    Version Beta 0.0.1<br/>
+    
+    Updated November 10th, 2011<br/>
+    
+    Have questions or find a bug? Open an Issue on <a href="https://github.com/robincwillis/CharCycle/issues" target="_blank">GitHub</a><br/>
+    
+    
+    
+    
+    <a class="button" href="src/jquery.charCycle.0.0.1.js" target="_blank">Download</a> 
+    <!-- Download Link -->
+    <a class="button" href="example/index.html" target="_blank">Demo</a>
+    <!-- Demo Link -->
+    <a class="button" href="https://github.com/robincwillis/CharCycle" target="_blank">Source</a> 
+    <!-- Contact Link -->
+    
+    
+    </div>
+    <div style="clear:both"></div>
+    <!-- Pre-HTML -->
+    <div id="code_html">
+    <h2>HTML</h2>
+    <pre>
+  &lt;div class="c"&gt;&lt;a href="#" id="text"&gt;Lorem ipsum dolor sit amet, consectetur&lt;/a&gt;&lt;/div&gt;</pre>      
+    </div>
+    
+    <!-- Pre-Jquery -->
+    <div id="code_jquery">
+    <h2>JAVASCRIPT</h2>
+      <pre>
+  $('.c').mouseenter(function(){
+    if($(this).hasClass('cycling')==false){ 
+        $(this).charcycle({'target':'#text'});  
+    }
+  });</pre>
+    </div>
+
+
+    <div id="footer">
+      
+      Check out my other JQuery Plugins and Projects at <a href="http://code.robincwillis.com" target="_blank">code.robincwillis.com</a>
+      or get in touch with me on <a href="https://twitter.com/#!/robincwillis" target="_blank">Twitter</a>.
+    </div>
+    
+    </div>
+  </body>
+</html>
