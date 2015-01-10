@@ -15,9 +15,9 @@ This effect is inspired by the classic actionscript effect on [yugop.com](http:/
 
 *	speed : time it takes per cycle, default is set to 5
 
-###Example
+###Project Page
 
-[CharCycle](http://www.robincwillis.com/CharCycle/example "Example")
+[CharCycle](http://robincwillis.github.io/CharCycle/ "Project Page")
 
 ###HTML
 
@@ -26,7 +26,7 @@ This effect is inspired by the classic actionscript effect on [yugop.com](http:/
 ###Javascript
 
 	$('.c').mouseenter(function(){
-    	if($(this).hasClass('cycling')==false){ 
-        	$(this).charcycle({'target':'#text'});  
+    	if($(this).hasClass('cycling')==false){
+        	$(this).charcycle({'target':'#text'});
     	}
   	});
